@@ -1,0 +1,89 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #1E90FF;
+}
+
+input[type=text] {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 8px;
+    box-sizing: border-box;
+    border: none;
+    background-color: white;
+    color: black;
+}
+
+input[type=text]:focus {
+    background-color: #FFB6C1;
+}
+
+.sideMenu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #6495ED;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sideMenu a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 12px;
+    color: black;
+    display: block;
+}
+
+.results {
+    margin top: 10px;
+}
+
+.placeList {
+    font-family: 'Josefin Slab', serif;
+    color: black;
+    margin-left: 1px;
+    line-height: 30px;
+    cursor: pointer;
+    
+}
+
+.sideMenu a:hover {
+    color: #f1f1f1;
+}
+
+.sideMenu .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+#map {
+    bottom: 0px;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    right: 0px;
+}
+
+@media screen and (max-width: 800px) {
+    .sideMenu {
+        max-width: 130px;
+        font-size: 12px;
+    }
+    .sideMenu a {
+        font-size: 14px;
+    }
+}
+
+.content {
+    width: 300px;
+}
